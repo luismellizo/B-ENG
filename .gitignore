@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+.vite
+
+# build artifacts / refs / backups (not for deploy)
+INGENIERO.zip
+.thumbnail
+logo_ref.webp
+Logo Lab.html
+B_ENG.html
+B_ENG v1.html

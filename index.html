@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>B_ENG — Estudio de Ingeniería Civil · Colombia</title>
+<link rel="icon" id="favicon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20996%20749'%3E%3Cpath%20d='M75,32L902,308L870,732L278,732ZM210,203L802,401L804,676L740,680L308,532Z'%20fill='%23111110'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#e9e3d6">
+<meta name="description" content="B_ENG — estudio colombiano de ingeniería civil. Estructuras, hidráulica, vías, geotecnia, BIM e interventoría.">
+<meta property="og:title" content="B_ENG — Estudio de Ingeniería Civil · Colombia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ====== CUSTOM CURSOR ====== -->
+<div class="cur" id="cur"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<!-- ====== PRELOADER ====== -->
+<div class="preloader" id="pre">
+  <div class="count">
+    <em id="counter">00</em><span class="pct">/100</span>
+  </div>
+  <div class="bar"><i id="barFill"></i></div>
+  <div class="meta">
+    <div class="l">B_ENG · Estudio de ingeniería</div>
+    <div class="b">Cargando proyecto<span id="dots">...</span></div>
+    <div class="l">2011 — 2026 · Colombia</div>
+  </div>
+</div>
+
+<!-- ====== STATUS BAR ====== -->
+<div class="statusbar">
+  <div class="l">
+    <span><i class="dot" style="display:inline-block; margin-right:6px;"></i> B_ENG · Disponible</span>
+    <span>Bogotá D.C. — 4°35′N 74°04′W</span>
+    <span id="clock">— : —  COT</span>
+  </div>
+  <div class="r">
+    <span>Estudio: Lun–Vie · 8h–18h</span>
+    <span>v.26.05 · Edition Colombia</span>
+  </div>
+</div>
+
+<!-- ====== NAV ====== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo" data-cursor="hover">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 996 749" preserveAspectRatio="xMidYMid meet" fill-rule="evenodd">
+          <path class="p p-body" d="M75,32 L902,308 L870,732 L278,732 Z M210,203 L802,401 L804,676 L740,680 L308,532 Z"/>
+          <polygon class="p p-wedge" points="52,25 259,732 52,731"/>
+          <polygon class="p p-stripe" points="225,219 792,408 794,487 252,307"/>
+          <polygon class="p p-sliver" points="793,519 794,665 763,669 762,659"/>
+          <polygon class="p p-slash" points="925,317 966,329 970,338 969,732 889,730 921,331"/>
+        </svg>
+      </span>
+      B_ENG
+    </a>
+    <div class="nav-center">
+      <a href="#servicios" data-cursor="hover"><span class="n">01</span> Servicios</a>
+      <a href="#proyectos" data-cursor="hover"><span class="n">02</span> Proyectos</a>
+      <a href="#proceso" data-cursor="hover"><span class="n">03</span> Proceso</a>
+      <a href="#sectores" data-cursor="hover"><span class="n">04</span> Sectores</a>
+      <a href="#equipo" data-cursor="hover"><span class="n">05</span> Estudio</a>
+    </div>
+    <a href="#contacto" class="nav-cta" data-cursor="hover"><span class="d"></span> Cotizar proyecto</a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ====== MOBILE MENU ====== -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navegación">
+  <nav class="mm-links">
+    <a href="#servicios"><span class="n">01</span> Servicios</a>
+    <a href="#proyectos"><span class="n">02</span> Proyectos</a>
+    <a href="#proceso"><span class="n">03</span> Proceso</a>
+    <a href="#sectores"><span class="n">04</span> Sectores</a>
+    <a href="#equipo"><span class="n">05</span> Estudio</a>
+  </nav>
+  <a href="#contacto" class="mm-cta">Cotizar proyecto →</a>
+</div>
+
+<!-- ====== HERO ====== -->
+<header class="hero">
+  <div class="container">
+
+    <div class="hero-row1">
+      <div class="mono kicker">
+        <span class="acc"></span>
+        <span>Est. 2011 · NIT 901.234.567-2</span>
+        <span style="color:var(--muted)">— Estudio de ingeniería civil con sede en Bogotá, Medellín y Barranquilla</span>
+      </div>
+      <div class="mono now">
+        <span>Edición</span> &nbsp;<b style="color:var(--ink); font-family: 'Space Grotesk', sans-serif;">№ 026</b> &nbsp;<span>·  Mayo 2026</span>
+      </div>
+    </div>
+
+    <h1>
+      <span class="ln"><span class="w">Calculamos&nbsp;</span></span>
+      <span class="ln"><span class="w"><span class="acc">lo que</span> sostiene</span></span>
+      <span class="ln"><span class="w"><span class="stk">la infraestructura</span></span></span>
+      <span class="ln"><span class="w">de&nbsp;Colombia<span class="ac">.</span></span></span>
+    </h1>
+
+    <div class="hero-bot">
+      <p>
+        B_ENG es un estudio colombiano de <span class="hi">ingeniería civil</span>. Diseñamos, calculamos y supervisamos infraestructura — estructuras, hidráulica, vías, geotecnia y obra pública — con criterio técnico, plazos reales y responsabilidad por cada cota.
+      </p>
+      <div></div>
+      <a href="#servicios" class="scroll-cue" data-cursor="hover">
+        Scroll
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Orbital -->
+  <div class="orbit" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <defs>
+        <path id="circle" d="M100,100 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0"/>
+      </defs>
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#1a1a17" stroke-width="1"/>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="#1a1a17" stroke-dasharray="2 4" stroke-width="0.8"/>
+      <text font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="3" fill="#1a1a17">
+        <textPath href="#circle">INGENIERÍA · CIVIL · COLOMBIA · 4°35′N · DESDE 2011 · ESTUDIO B_ENG · </textPath>
+      </text>
+    </svg>
+    <div class="core">
+      <b>15</b>
+      años<br/>de obra
+    </div>
+  </div>
+</header>
+
+<!-- ====== METRICS STRIP ====== -->
+<div class="metrics">
+  <div class="m"><span class="mono k">ISO 9001 + 14001</span><span class="v">Certificación vigente</span></div>
+  <div class="m"><span class="mono k">NSR-10 / NTC</span><span class="v">Sismo-resistente</span></div>
+  <div class="m"><span class="mono k">BIM Level 3</span><span class="v">Modelado federado</span></div>
+  <div class="m"><span class="mono k">RUP · RUC 8.5</span><span class="v">Registro vigente</span></div>
+</div>
+
+<!-- ====== MARQUEE ====== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Estructuras <i class="dot"></i> <i class="acc">Hidráulica</i> <i class="dot"></i> Vías &amp; transporte <i class="dot"></i> <i class="acc">Geotecnia</i> <i class="dot"></i> BIM <i class="dot"></i> <i class="acc">Interventoría</i> <i class="dot"></i></span>
+    <span>Estructuras <i class="dot"></i> <i class="acc">Hidráulica</i> <i class="dot"></i> Vías &amp; transporte <i class="dot"></i> <i class="acc">Geotecnia</i> <i class="dot"></i> BIM <i class="dot"></i> <i class="acc">Interventoría</i> <i class="dot"></i></span>
+  </div>
+</div>
+
+<!-- ====== SERVICES ====== -->
+<section id="servicios" class="container">
+  <div class="sec-head">
+    <div class="mono num">01 — Capacidades</div>
+    <h2 class="reveal">Seis disciplinas,<br/>un solo <span class="acc">criterio técnico.</span></h2>
+    <div class="mono tag">Servicios / 06</div>
+  </div>
+
+  <div class="techboard" id="svcWrap">
+    <div class="techboard-head">
+      <span class="mono">REF</span>
+      <span class="mono t">Capability index</span>
+      <span class="mono">Drawing</span>
+      <span class="mono">Standard / Reference</span>
+      <span class="mono"></span>
+    </div>
+
+    <a class="techrow" data-svc="S—01" data-cursor="hover">
+      <span class="code">S—01</span>
+      <h3>Estructuras &amp; <span class="acc">sismo-resistente</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—01</span>
+        <span class="tb-r">1:25</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- column (I-beam HEB 300 elevation) -->
+  <rect class="ln anim" x="48" y="6" width="22" height="76"/>
+  <line class="ln-d" x1="59" y1="6" x2="59" y2="82"/>
+  <line class="ln anim" x1="48" y1="22" x2="70" y2="22"/>
+  <line class="ln anim" x1="48" y1="66" x2="70" y2="66"/>
+  <!-- beam -->
+  <rect class="ln anim" x="70" y="36" width="80" height="16"/>
+  <line class="ln-d" x1="70" y1="44" x2="150" y2="44"/>
+  <!-- connection plate -->
+  <rect class="ln anim" x="68" y="34" width="14" height="20"/>
+  <!-- bolts -->
+  <circle class="ln" cx="73" cy="38" r="1.2" fill="currentColor"/>
+  <circle class="ln" cx="73" cy="44" r="1.2" fill="currentColor"/>
+  <circle class="ln" cx="73" cy="50" r="1.2" fill="currentColor"/>
+  <circle class="ln" cx="78" cy="38" r="1.2" fill="currentColor"/>
+  <circle class="ln" cx="78" cy="44" r="1.2" fill="currentColor"/>
+  <circle class="ln" cx="78" cy="50" r="1.2" fill="currentColor"/>
+  <!-- dim lines -->
+  <line class="ln-h" x1="46" y1="6" x2="36" y2="6"/>
+  <line class="ln-h" x1="46" y1="82" x2="36" y2="82"/>
+  <line class="ln-h" x1="40" y1="6" x2="40" y2="82"/>
+  <text x="20" y="46" transform="rotate(-90 20 46)">3.20 m</text>
+  <!-- ground -->
+  <line class="ln" x1="2" y1="82" x2="158" y2="82"/>
+  <line class="ln-h" x1="2" y1="84" x2="158" y2="84"/>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>NSR—10 · ACI 318</b>
+        <span>AISC 360 · NTC 5500</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="techrow" data-svc="S—02" data-cursor="hover">
+      <span class="code">S—02</span>
+      <h3>Hidráulica &amp; <span class="acc">sanitaria</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—02</span>
+        <span class="tb-r">1:50</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- ground -->
+  <line class="ln-h" x1="2" y1="74" x2="158" y2="74"/>
+  <!-- main pipe -->
+  <line class="ln anim" x1="6" y1="46" x2="42" y2="46"/>
+  <line class="ln anim" x1="6" y1="56" x2="42" y2="56"/>
+  <!-- pump -->
+  <circle class="ln anim" cx="56" cy="51" r="14"/>
+  <line class="ln" x1="56" y1="44" x2="60" y2="51"/>
+  <line class="ln" x1="56" y1="44" x2="52" y2="51"/>
+  <line class="ln" x1="60" y1="51" x2="52" y2="51"/>
+  <!-- pipe to valve -->
+  <line class="ln anim" x1="70" y1="46" x2="92" y2="46"/>
+  <line class="ln anim" x1="70" y1="56" x2="92" y2="56"/>
+  <!-- valve (bowtie) -->
+  <path class="ln anim" d="M92 41 L106 56 L106 41 L92 56 Z"/>
+  <line class="ln" x1="99" y1="34" x2="99" y2="41"/>
+  <rect class="ln" x="95" y="28" width="8" height="6"/>
+  <!-- pipe outflow -->
+  <line class="ln anim" x1="106" y1="46" x2="154" y2="46"/>
+  <line class="ln anim" x1="106" y1="56" x2="154" y2="56"/>
+  <!-- flow arrow -->
+  <path class="ln" d="M134 51 L142 51 M139 48 L142 51 L139 54"/>
+  <!-- labels -->
+  <text x="46" y="76">P-01</text>
+  <text x="93" y="26">V-01</text>
+  <text x="2" y="14">Q = 380 L/s</text>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>RAS 2017 · NTC</b>
+        <span>EPM/EAAB · INVÍAS</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="techrow" data-svc="S—03" data-cursor="hover">
+      <span class="code">S—03</span>
+      <h3>Vías &amp; <span class="acc">transporte</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—03</span>
+        <span class="tb-r">1:20</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- pavement section -->
+  <!-- subgrade hatch -->
+  <pattern id="hatchG" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+    <line class="ln-h" x1="0" y1="0" x2="0" y2="4" stroke-width="0.6"/>
+  </pattern>
+  <rect x="6" y="60" width="148" height="22" fill="url(#hatchG)"/>
+  <rect class="ln anim" x="6" y="60" width="148" height="22"/>
+  <!-- sub-base -->
+  <rect class="ln anim" x="6" y="48" width="148" height="12"/>
+  <rect class="ln anim" x="6" y="40" width="148" height="8"/>
+  <!-- asphalt -->
+  <rect class="ln anim" x="6" y="32" width="148" height="8" fill="currentColor" fill-opacity=".22"/>
+  <!-- crown line -->
+  <path class="ln-d" d="M6 36 Q 80 32 154 36"/>
+  <!-- curb -->
+  <path class="ln anim" d="M6 32 L6 24 L14 24 L14 32"/>
+  <path class="ln anim" d="M154 32 L154 24 L146 24 L146 32"/>
+  <!-- dim -->
+  <line class="ln-h" x1="20" y1="22" x2="140" y2="22"/>
+  <line class="ln-h" x1="20" y1="18" x2="20" y2="26"/>
+  <line class="ln-h" x1="140" y1="18" x2="140" y2="26"/>
+  <text x="76" y="16">7.20 m</text>
+  <!-- layer labels -->
+  <text x="58" y="38">MDC—2</text>
+  <text x="58" y="56">BG/SBG</text>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>INVÍAS · AASHTO</b>
+        <span>Manual de Diseño Geométrico</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="techrow" data-svc="S—04" data-cursor="hover">
+      <span class="code">S—04</span>
+      <h3>Geotecnia &amp; <span class="acc">suelos</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—04</span>
+        <span class="tb-r">1:100</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- borehole + soil layers -->
+  <!-- depth scale -->
+  <line class="ln-h" x1="14" y1="6" x2="14" y2="82"/>
+  <line class="ln-h" x1="11" y1="6" x2="17" y2="6"/>
+  <line class="ln-h" x1="11" y1="22" x2="17" y2="22"/>
+  <line class="ln-h" x1="11" y1="42" x2="17" y2="42"/>
+  <line class="ln-h" x1="11" y1="62" x2="17" y2="62"/>
+  <line class="ln-h" x1="11" y1="82" x2="17" y2="82"/>
+  <text x="2" y="9">0</text>
+  <text x="2" y="45">8m</text>
+  <text x="2" y="84">20m</text>
+  <!-- layers -->
+  <rect class="ln anim" x="22" y="6" width="120" height="16"/>
+  <pattern id="dotsP" patternUnits="userSpaceOnUse" width="6" height="6">
+    <circle cx="1.5" cy="1.5" r=".6" fill="currentColor" opacity=".4"/>
+  </pattern>
+  <rect x="22" y="6" width="120" height="16" fill="url(#dotsP)"/>
+  <rect class="ln anim" x="22" y="22" width="120" height="20"/>
+  <pattern id="hatchA" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)">
+    <line class="ln-h" x1="0" y1="0" x2="0" y2="5" stroke-width="0.5"/>
+  </pattern>
+  <rect x="22" y="22" width="120" height="20" fill="url(#hatchA)"/>
+  <rect class="ln anim" x="22" y="42" width="120" height="20"/>
+  <pattern id="brickP" patternUnits="userSpaceOnUse" width="8" height="4">
+    <path class="ln-h" d="M0 2 H8 M2 0 V4 M6 0 V4" stroke-width="0.4"/>
+  </pattern>
+  <rect x="22" y="42" width="120" height="20" fill="url(#brickP)"/>
+  <rect class="ln anim" x="22" y="62" width="120" height="20"/>
+  <pattern id="rockP" patternUnits="userSpaceOnUse" width="10" height="10">
+    <path class="ln-h" d="M0 5 L5 0 L10 5 L5 10 Z" stroke-width=".5" fill="none"/>
+  </pattern>
+  <rect x="22" y="62" width="120" height="20" fill="url(#rockP)"/>
+  <!-- labels -->
+  <text x="80" y="16">Arena limosa · SP-SM</text>
+  <text x="80" y="34">Arcilla blanda · CL</text>
+  <text x="80" y="54">Arena densa · SW</text>
+  <text x="80" y="74">Roca · SPT &gt;50</text>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>NSR—10 · H-1</b>
+        <span>INVE-122 / SPT / CPT</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="techrow" data-svc="S—05" data-cursor="hover">
+      <span class="code">S—05</span>
+      <h3>BIM &amp; <span class="acc">coordinación</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—05</span>
+        <span class="tb-r">LOD 350</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- isometric building wireframe -->
+  <g transform="translate(80 46)">
+    <!-- base parallelogram -->
+    <path class="ln anim" d="M-50 24 L-10 36 L50 24 L10 12 Z"/>
+    <!-- top -->
+    <path class="ln anim" d="M-50 -24 L-10 -12 L50 -24 L10 -36 Z"/>
+    <!-- verticals -->
+    <line class="ln anim" x1="-50" y1="24" x2="-50" y2="-24"/>
+    <line class="ln anim" x1="50" y1="24" x2="50" y2="-24"/>
+    <line class="ln anim" x1="-10" y1="36" x2="-10" y2="-12"/>
+    <line class="ln anim" x1="10" y1="12" x2="10" y2="-36"/>
+    <!-- floor lines (front face) -->
+    <line class="ln-d" x1="-50" y1="6" x2="-10" y2="18"/>
+    <line class="ln-d" x1="-50" y1="-12" x2="-10" y2="0"/>
+    <line class="ln-d" x1="-10" y1="18" x2="50" y2="6"/>
+    <line class="ln-d" x1="-10" y1="0" x2="50" y2="-12"/>
+    <!-- column dots -->
+    <circle cx="-30" cy="0" r="1" fill="currentColor"/>
+    <circle cx="-30" cy="-18" r="1" fill="currentColor"/>
+    <circle cx="30" cy="0" r="1" fill="currentColor"/>
+    <circle cx="30" cy="-18" r="1" fill="currentColor"/>
+  </g>
+  <text x="6" y="14">LOD 350</text>
+  <text x="120" y="84">IFC 4.0</text>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>BS EN ISO 19650</b>
+        <span>IFC 4.0 · COBie 2.4</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="techrow" data-svc="S—06" data-cursor="hover">
+      <span class="code">S—06</span>
+      <h3>Interventoría &amp; <span class="acc">gerencia</span></h3>
+      <div class="dwg">
+        <span class="tb">DWG · S—06</span>
+        <span class="tb-r">Q1–Q4</span>
+        
+<svg viewBox="0 0 160 88" preserveAspectRatio="xMidYMid meet">
+  <!-- gantt -->
+  <line class="ln" x1="6" y1="14" x2="154" y2="14"/>
+  <line class="ln" x1="6" y1="14" x2="6" y2="80"/>
+  <!-- ticks -->
+  <line class="ln-h" x1="36" y1="14" x2="36" y2="78"/>
+  <line class="ln-h" x1="66" y1="14" x2="66" y2="78"/>
+  <line class="ln-h" x1="96" y1="14" x2="96" y2="78"/>
+  <line class="ln-h" x1="126" y1="14" x2="126" y2="78"/>
+  <text x="32" y="12">Q1</text>
+  <text x="62" y="12">Q2</text>
+  <text x="92" y="12">Q3</text>
+  <text x="122" y="12">Q4</text>
+  <!-- bars -->
+  <rect class="ln anim" x="10" y="20" width="46" height="8" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln anim" x="40" y="32" width="60" height="8" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln anim" x="76" y="44" width="44" height="8" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln anim" x="100" y="56" width="50" height="8" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln anim" x="120" y="68" width="30" height="8" fill="currentColor" fill-opacity=".4"/>
+  <!-- task labels -->
+  <text x="12" y="26">PRELIM</text>
+  <text x="42" y="38">ESTRUC</text>
+  <text x="78" y="50">REDES</text>
+  <text x="102" y="62">ACAB</text>
+  <text x="122" y="74">CIERRE</text>
+</svg>
+
+      </div>
+      <div class="standards">
+        <b>Ley 80/93 · Ley 1474</b>
+        <span>PMI · ISO 21500</span>
+      </div>
+      <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<!-- ====== FEATURED PROJECT ====== -->
+<section id="proyectos" class="container">
+  <div class="sec-head">
+    <div class="mono num">02 — Obra reciente</div>
+    <h2 class="reveal">Proyecto destacado /<br/><span class="acc">Magdalena.</span></h2>
+    <div class="mono tag">Featured</div>
+  </div>
+
+  <div class="featured">
+    <div class="featured-grid">
+      <div class="imgwrap" data-cursor="text" data-label="Ver caso">
+        <div class="ph"></div>
+        <span class="corner">PR—001 · 2024—26</span>
+        <div class="meta">
+          <span class="lbl">render · puente atirantado</span>
+          <span>Honda, Tolima</span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="mono" style="color:var(--muted)">Caso de estudio 01 — Concesión 4G</div>
+        <h3>Puente atirantado<br/>sobre el <span class="acc">Río Magdalena</span></h3>
+        <p class="intro">
+          Diseño estructural y supervisión de obra de un puente atirantado de 420 m de luz total que conecta dos cabeceras municipales sobre el río más importante del país. Cálculo sísmico bajo NSR-10, modelo BIM federado y plan de tránsito de obra.
+        </p>
+
+        <div class="featured-specs">
+          <div class="s"><span class="mono k">Luz total</span><span class="v">420 m · 3 vanos</span></div>
+          <div class="s"><span class="mono k">Pilono principal</span><span class="v">132 m de altura</span></div>
+          <div class="s"><span class="mono k">Cliente</span><span class="v">Concesionaria Magdalena S.A.</span></div>
+          <div class="s"><span class="mono k">Disciplinas</span><span class="v">Estructuras · Geotecnia · BIM</span></div>
+          <div class="s"><span class="mono k">Ubicación</span><span class="v">Honda — Puerto Salgar</span></div>
+          <div class="s"><span class="mono k">Periodo</span><span class="v">2024 — 2026 · en obra</span></div>
+        </div>
+
+        <div class="featured-actions">
+          <a href="#" class="btn solid" data-cursor="hover">
+            Caso completo
+            <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#" class="btn ghost" data-cursor="hover">Descargar memoria · PDF 4.2MB</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects index — drawing sheet -->
+  <div class="projsheet" id="projIndex">
+    <div class="projsheet-head">
+      <span class="mono">/№</span>
+      <span class="mono t">Proyecto · Localización</span>
+      <span class="mono">Plano</span>
+      <span class="mono">Datos técnicos</span>
+      <span class="mono">Año</span>
+      <span class="mono"></span>
+    </div>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/01</span>
+      <div class="ps-name">
+        Torre Calle 100, <span class="acc">Bogotá</span>
+        <span class="cat">Edificación · 32 pisos · uso mixto</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—002</span>
+        <span class="tb-r">1:500</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- ground -->
+  <line class="ln" x1="2" y1="80" x2="198" y2="80"/>
+  <line class="ln-h" x1="2" y1="83" x2="198" y2="83"/>
+  <line class="ln-h" x1="2" y1="86" x2="198" y2="86"/>
+  <!-- building footprint -->
+  <rect class="ln anim" x="70" y="6" width="60" height="74"/>
+  <!-- floor lines -->
+  <line class="ln-d" x1="70" y1="14" x2="130" y2="14"/>
+  <line class="ln-d" x1="70" y1="22" x2="130" y2="22"/>
+  <line class="ln-d" x1="70" y1="30" x2="130" y2="30"/>
+  <line class="ln-d" x1="70" y1="38" x2="130" y2="38"/>
+  <line class="ln-d" x1="70" y1="46" x2="130" y2="46"/>
+  <line class="ln-d" x1="70" y1="54" x2="130" y2="54"/>
+  <line class="ln-d" x1="70" y1="62" x2="130" y2="62"/>
+  <line class="ln-d" x1="70" y1="70" x2="130" y2="70"/>
+  <!-- windows pattern -->
+  <pattern id="winP" patternUnits="userSpaceOnUse" width="6" height="8">
+    <rect x="1.5" y="2" width="3" height="4" fill="currentColor" fill-opacity=".22"/>
+  </pattern>
+  <rect x="74" y="10" width="52" height="64" fill="url(#winP)"/>
+  <!-- adjacent context -->
+  <rect class="ln anim" x="20" y="40" width="44" height="40"/>
+  <rect class="ln anim" x="136" y="52" width="50" height="28"/>
+  <!-- dim -->
+  <line class="ln-h" x1="68" y1="6" x2="60" y2="6"/>
+  <line class="ln-h" x1="68" y1="80" x2="60" y2="80"/>
+  <line class="ln-h" x1="64" y1="6" x2="64" y2="80"/>
+  <text x="48" y="46" transform="rotate(-90 48 46)">112.0 m</text>
+  <text x="92" y="44">N+96</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:500</span>
+        <span class="k">Hoja</span><span class="v">P—001/24</span>
+        <span class="k">Vista</span><span class="v">ELEV.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2023</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/02</span>
+      <div class="ps-name">
+        PTAR <span class="acc">Soacha · 380 L/s</span>
+        <span class="cat">Hidráulica · sanitaria</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—003</span>
+        <span class="tb-r">1:200</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- inflow -->
+  <line class="ln anim" x1="2" y1="44" x2="22" y2="44"/>
+  <path class="ln" d="M16 41 L22 44 L16 47"/>
+  <!-- screening + grit -->
+  <rect class="ln anim" x="22" y="36" width="22" height="16"/>
+  <line class="ln-h" x1="24" y1="38" x2="28" y2="50"/>
+  <line class="ln-h" x1="28" y1="38" x2="32" y2="50"/>
+  <line class="ln-h" x1="32" y1="38" x2="36" y2="50"/>
+  <line class="ln-h" x1="36" y1="38" x2="40" y2="50"/>
+  <!-- primary sedimentation (circles) -->
+  <circle class="ln anim" cx="64" cy="30" r="14"/>
+  <circle class="ln-d" cx="64" cy="30" r="10"/>
+  <circle cx="64" cy="30" r="1" fill="currentColor"/>
+  <circle class="ln anim" cx="64" cy="58" r="14"/>
+  <circle class="ln-d" cx="64" cy="58" r="10"/>
+  <circle cx="64" cy="58" r="1" fill="currentColor"/>
+  <!-- aeration -->
+  <rect class="ln anim" x="92" y="20" width="46" height="48"/>
+  <line class="ln-h" x1="92" y1="30" x2="138" y2="30"/>
+  <line class="ln-h" x1="92" y1="40" x2="138" y2="40"/>
+  <line class="ln-h" x1="92" y1="50" x2="138" y2="50"/>
+  <line class="ln-h" x1="92" y1="60" x2="138" y2="60"/>
+  <!-- secondary clarifier -->
+  <circle class="ln anim" cx="158" cy="44" r="16"/>
+  <circle class="ln-d" cx="158" cy="44" r="11"/>
+  <circle cx="158" cy="44" r="1.4" fill="currentColor"/>
+  <!-- outflow -->
+  <line class="ln anim" x1="174" y1="44" x2="198" y2="44"/>
+  <path class="ln" d="M192 41 L198 44 L192 47"/>
+  <!-- labels -->
+  <text x="24" y="34">PT/D</text>
+  <text x="56" y="24">D—01</text>
+  <text x="56" y="52">D—02</text>
+  <text x="102" y="28">AERACIÓN</text>
+  <text x="148" y="38">CLAR.</text>
+  <text x="2" y="14">Q = 380 L/s</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:200</span>
+        <span class="k">Hoja</span><span class="v">H—003/12</span>
+        <span class="k">Vista</span><span class="v">PLAN.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2025</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/03</span>
+      <div class="ps-name">
+        Vía terciaria <span class="acc">San Carlos · 47 km</span>
+        <span class="cat">Vías · interventoría</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—004</span>
+        <span class="tb-r">1:5 000</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- contour lines -->
+  <path class="ln-h" d="M2 70 Q 60 60, 100 64 T 198 56"/>
+  <path class="ln-h" d="M2 58 Q 60 48, 100 52 T 198 44"/>
+  <path class="ln-h" d="M2 46 Q 60 36, 100 40 T 198 32"/>
+  <path class="ln-h" d="M2 34 Q 60 24, 100 28 T 198 20"/>
+  <path class="ln-h" d="M2 22 Q 60 12, 100 16 T 198 8"/>
+  <!-- road centerline + edges -->
+  <path class="ln anim" d="M0 78 Q 40 50, 90 50 Q 140 50, 198 22"/>
+  <path class="ln anim" d="M0 82 Q 40 54, 90 54 Q 140 54, 198 26"/>
+  <path class="ln-d" d="M0 80 Q 40 52, 90 52 Q 140 52, 198 24"/>
+  <!-- km markers -->
+  <circle class="ln" cx="40" cy="62" r="2" fill="currentColor"/>
+  <circle class="ln" cx="90" cy="52" r="2" fill="currentColor"/>
+  <circle class="ln" cx="140" cy="48" r="2" fill="currentColor"/>
+  <circle class="ln" cx="180" cy="32" r="2" fill="currentColor"/>
+  <text x="42" y="60">K0+200</text>
+  <text x="92" y="50">K10</text>
+  <text x="142" y="46">K30</text>
+  <text x="172" y="28">K47</text>
+  <!-- north arrow -->
+  <circle class="ln" cx="186" cy="76" r="6"/>
+  <path class="ln" d="M186 70 L189 78 L186 76 L183 78 Z" fill="currentColor"/>
+  <text x="183" y="89">N</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:5 000</span>
+        <span class="k">Hoja</span><span class="v">V—001/47</span>
+        <span class="k">Vista</span><span class="v">PLAN.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2022—24</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/04</span>
+      <div class="ps-name">
+        Hospital regional, <span class="acc">Santa Marta</span>
+        <span class="cat">Hospitalario · 18 000 m²</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—005</span>
+        <span class="tb-r">1:200</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- footprint -->
+  <rect class="ln anim" x="6" y="8" width="188" height="72"/>
+  <!-- modules -->
+  <line class="ln anim" x1="60" y1="8" x2="60" y2="80"/>
+  <line class="ln anim" x1="130" y1="8" x2="130" y2="80"/>
+  <line class="ln anim" x1="6" y1="44" x2="194" y2="44"/>
+  <line class="ln-d" x1="6" y1="22" x2="60" y2="22"/>
+  <line class="ln-d" x1="6" y1="62" x2="60" y2="62"/>
+  <line class="ln-d" x1="60" y1="22" x2="130" y2="22"/>
+  <line class="ln-d" x1="60" y1="62" x2="130" y2="62"/>
+  <line class="ln-d" x1="130" y1="22" x2="194" y2="22"/>
+  <line class="ln-d" x1="130" y1="62" x2="194" y2="62"/>
+  <!-- circulation core -->
+  <rect class="ln" x="60" y="38" width="70" height="12" fill="currentColor" fill-opacity=".18"/>
+  <!-- doors -->
+  <path class="ln" d="M30 8 a8 8 0 0 1 0 -6 L30 8"/>
+  <path class="ln" d="M170 80 a8 8 0 0 1 0 6 L170 80"/>
+  <!-- labels -->
+  <text x="12" y="18">URG</text>
+  <text x="12" y="58">HOSP</text>
+  <text x="68" y="18">CIRUG</text>
+  <text x="68" y="58">CONS</text>
+  <text x="136" y="18">UCI</text>
+  <text x="136" y="58">ADMIN</text>
+  <text x="172" y="6">18 000 m²</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:200</span>
+        <span class="k">Hoja</span><span class="v">A—002/22</span>
+        <span class="k">Vista</span><span class="v">PLAN.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2025—27</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/05</span>
+      <div class="ps-name">
+        Estadio <span class="acc">Pascual Guerrero, Cali</span>
+        <span class="cat">Reforzamiento estructural</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—006</span>
+        <span class="tb-r">1:1 000</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- outer oval -->
+  <ellipse class="ln anim" cx="100" cy="44" rx="92" ry="38"/>
+  <ellipse class="ln-d" cx="100" cy="44" rx="80" ry="32"/>
+  <ellipse class="ln-d" cx="100" cy="44" rx="64" ry="26"/>
+  <!-- pitch -->
+  <rect class="ln anim" x="68" y="32" width="64" height="24"/>
+  <line class="ln-d" x1="100" y1="32" x2="100" y2="56"/>
+  <circle class="ln-d" cx="100" cy="44" r="5"/>
+  <!-- structure radials -->
+  <line class="ln-h" x1="100" y1="6" x2="100" y2="14"/>
+  <line class="ln-h" x1="100" y1="74" x2="100" y2="82"/>
+  <line class="ln-h" x1="8" y1="44" x2="16" y2="44"/>
+  <line class="ln-h" x1="184" y1="44" x2="192" y2="44"/>
+  <line class="ln-h" x1="32" y1="20" x2="40" y2="26"/>
+  <line class="ln-h" x1="168" y1="20" x2="160" y2="26"/>
+  <line class="ln-h" x1="32" y1="68" x2="40" y2="62"/>
+  <line class="ln-h" x1="168" y1="68" x2="160" y2="62"/>
+  <!-- labels -->
+  <text x="86" y="12">N · 36 000</text>
+  <text x="2" y="14">REF. NSR—10</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:1 000</span>
+        <span class="k">Hoja</span><span class="v">E—001/08</span>
+        <span class="k">Vista</span><span class="v">PLAN.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2026</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/06</span>
+      <div class="ps-name">
+        Acueducto <span class="acc">Sumapaz</span>
+        <span class="cat">Hidráulica · captación</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—007</span>
+        <span class="tb-r">1:10 000</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- topo -->
+  <path class="ln-h" d="M2 80 Q 50 70 100 76 T 198 72"/>
+  <path class="ln-h" d="M2 66 Q 50 56 100 62 T 198 58"/>
+  <path class="ln-h" d="M2 52 Q 50 42 100 48 T 198 44"/>
+  <path class="ln-h" d="M2 38 Q 50 28 100 34 T 198 30"/>
+  <!-- river -->
+  <path class="ln" d="M40 4 Q 60 30 50 60 Q 40 80 80 86" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <!-- intake -->
+  <circle class="ln anim" cx="50" cy="32" r="5"/>
+  <path class="ln" d="M50 27 L50 22 L46 22 L54 22"/>
+  <!-- pipeline -->
+  <path class="ln anim" d="M55 32 L88 38 L120 36 L158 50 L188 56"/>
+  <!-- valves along route -->
+  <path class="ln" d="M86 36 L92 40 M86 40 L92 36"/>
+  <path class="ln" d="M118 34 L124 38 M118 38 L124 34"/>
+  <path class="ln" d="M156 48 L162 52 M156 52 L162 48"/>
+  <!-- tank -->
+  <rect class="ln anim" x="180" y="48" width="18" height="14"/>
+  <line class="ln-d" x1="180" y1="52" x2="198" y2="52"/>
+  <!-- labels -->
+  <text x="36" y="22">CAPT.</text>
+  <text x="178" y="46">TANQ.</text>
+  <text x="2" y="14">∅ 600 mm · 24 km</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:10 000</span>
+        <span class="k">Hoja</span><span class="v">H—002/18</span>
+        <span class="k">Vista</span><span class="v">RUTA</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2024</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/07</span>
+      <div class="ps-name">
+        Túnel vehicular <span class="acc">La Línea II</span>
+        <span class="cat">Geotecnia · subterráneo</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—008</span>
+        <span class="tb-r">1:100</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- rock hatch around -->
+  <pattern id="rockT" patternUnits="userSpaceOnUse" width="10" height="10">
+    <path class="ln-h" d="M0 5 L5 0 L10 5 L5 10 Z" stroke-width=".4" fill="none"/>
+  </pattern>
+  <rect x="0" y="0" width="200" height="88" fill="url(#rockT)"/>
+  <!-- tunnel horseshoe (lining outer) -->
+  <path class="ln anim" d="M50 78 L50 38 A50 32 0 0 1 150 38 L150 78 Z"/>
+  <!-- inner lining -->
+  <path class="ln anim" d="M58 78 L58 40 A42 28 0 0 1 142 40 L142 78"/>
+  <!-- road surface -->
+  <line class="ln" x1="58" y1="68" x2="142" y2="68"/>
+  <line class="ln-h" x1="58" y1="72" x2="142" y2="72"/>
+  <!-- lanes -->
+  <line class="ln-d" x1="100" y1="68" x2="100" y2="78"/>
+  <line class="ln" x1="80" y1="62" x2="80" y2="68"/>
+  <line class="ln" x1="120" y1="62" x2="120" y2="68"/>
+  <!-- dim arrows -->
+  <line class="ln-h" x1="50" y1="84" x2="150" y2="84"/>
+  <text x="92" y="80">14.20 m</text>
+  <text x="6" y="12">SECCIÓN K7+200</text>
+  <text x="158" y="84">∅ 14.2</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:100</span>
+        <span class="k">Hoja</span><span class="v">T—003/56</span>
+        <span class="k">Vista</span><span class="v">SECC.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2025—28</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="psrow" data-cursor="hover">
+      <span class="ps-no">/08</span>
+      <div class="ps-name">
+        Centro logístico <span class="acc">Funza</span>
+        <span class="cat">Industrial · 28 000 m²</span>
+      </div>
+      <div class="ps-dwg">
+        <span class="tb">PR—009</span>
+        <span class="tb-r">1:400</span>
+        
+<svg viewBox="0 0 200 88" preserveAspectRatio="xMidYMid meet">
+  <!-- footprint -->
+  <rect class="ln anim" x="6" y="10" width="188" height="68"/>
+  <!-- grid columns -->
+  <line class="ln-d" x1="32" y1="10" x2="32" y2="78"/>
+  <line class="ln-d" x1="58" y1="10" x2="58" y2="78"/>
+  <line class="ln-d" x1="84" y1="10" x2="84" y2="78"/>
+  <line class="ln-d" x1="110" y1="10" x2="110" y2="78"/>
+  <line class="ln-d" x1="136" y1="10" x2="136" y2="78"/>
+  <line class="ln-d" x1="162" y1="10" x2="162" y2="78"/>
+  <line class="ln-d" x1="6" y1="32" x2="194" y2="32"/>
+  <line class="ln-d" x1="6" y1="56" x2="194" y2="56"/>
+  <!-- columns dots -->
+  <g fill="currentColor">
+    <circle cx="32" cy="32" r="1.2"/><circle cx="58" cy="32" r="1.2"/><circle cx="84" cy="32" r="1.2"/>
+    <circle cx="110" cy="32" r="1.2"/><circle cx="136" cy="32" r="1.2"/><circle cx="162" cy="32" r="1.2"/>
+    <circle cx="32" cy="56" r="1.2"/><circle cx="58" cy="56" r="1.2"/><circle cx="84" cy="56" r="1.2"/>
+    <circle cx="110" cy="56" r="1.2"/><circle cx="136" cy="56" r="1.2"/><circle cx="162" cy="56" r="1.2"/>
+  </g>
+  <!-- loading docks -->
+  <rect class="ln" x="6" y="64" width="6" height="14" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln" x="22" y="64" width="6" height="14" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln" x="38" y="64" width="6" height="14" fill="currentColor" fill-opacity=".22"/>
+  <rect class="ln" x="54" y="64" width="6" height="14" fill="currentColor" fill-opacity=".22"/>
+  <!-- office wing -->
+  <rect class="ln anim" x="168" y="14" width="22" height="60"/>
+  <line class="ln-d" x1="168" y1="30" x2="190" y2="30"/>
+  <line class="ln-d" x1="168" y1="50" x2="190" y2="50"/>
+  <!-- labels -->
+  <text x="92" y="18">BODEGA 28 000 m²</text>
+  <text x="170" y="22">OF.</text>
+  <text x="8" y="8">REJ. 6.5×8.0 m</text>
+</svg>
+      </div>
+      <div class="ps-data">
+        <span class="k">Esc.</span><span class="v">1:400</span>
+        <span class="k">Hoja</span><span class="v">A—001/18</span>
+        <span class="k">Vista</span><span class="v">PLAN.</span>
+        <span class="k">Rev.</span><span class="v">A</span>
+      </div>
+      <span class="ps-yr">2023</span>
+      <span class="ps-arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <div class="projsheet-foot">
+      <span>Selección curada · 8 de 240 proyectos en archivo · período 2021—2026</span>
+      <span>DRAWN · B_ENG</span>
+      <span>APPR · M.O.</span>
+      <span class="stamp">SHEET 01/30</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====== STATS ====== -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="head">
+      <h2>Cifras que <span class="acc">respaldan</span><br/>cada firma técnica.</h2>
+      <div class="mono meta">Actualizado · 05.2026</div>
+    </div>
+
+    <div class="grid">
+      <div class="s">
+        <div class="n"><span data-count="240" data-suffix="+">0</span></div>
+        <div class="k">Proyectos firmados desde 2011 — públicos y privados.</div>
+      </div>
+      <div class="s">
+        <div class="n"><span data-count="1.4" data-decimals="1">0.0</span><span class="u">M</span></div>
+        <div class="k">Metros cuadrados diseñados y supervisados.</div>
+      </div>
+      <div class="s">
+        <div class="n"><span data-count="62">0</span></div>
+        <div class="k">Ingenieros, residentes y técnicos en planta.</div>
+      </div>
+      <div class="s">
+        <div class="n"><span data-count="15">0</span></div>
+        <div class="k">Años de operación continua sin no-conformidades graves.</div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>
+        <div class="b">Marco normativo: NSR-10, RAS, INVÍAS, ACI 318, AASHTO, Eurocódigo.</div>
+        <span>Auditoría externa anual · Bureau Veritas Colombia.</span>
+      </div>
+      <div>
+        <div class="b">Cobertura: nacional, con operación activa en 18 departamentos.</div>
+        <span>Sedes propias en Bogotá, Medellín, Barranquilla. Residencias móviles en obra.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROCESS ====== -->
+<section id="proceso" class="container process">
+  <div class="sec-head">
+    <div class="mono num">03 — Método</div>
+    <h2 class="reveal">De la cota cero<br/>al <span class="acc">cierre.</span></h2>
+    <div class="mono tag">Proceso / 04</div>
+  </div>
+
+  <div class="proc-wrap">
+    <div class="sticky">
+      <span class="mono label">Etapa actual</span>
+      <div class="bigno" id="procNo">01</div>
+      <h3 id="procTitle">Diagnóstico<br/>técnico</h3>
+      <div class="progress"><i id="procBar"></i></div>
+      <span class="mono label" id="procDur">Duración típica · 2 — 3 semanas</span>
+    </div>
+
+    <div class="proc-steps" id="procSteps">
+      <article class="proc-step" data-step="1" data-title="Diagnóstico<br/>técnico" data-dur="Duración típica · 2 — 3 semanas">
+        <div class="top">
+          <span class="ord">0<span class="acc">1</span></span>
+          <h4>Diagnóstico técnico</h4>
+          <span class="dur">2 — 3 sem.</span>
+        </div>
+        <p>Visita técnica, levantamiento topográfico, revisión de antecedentes y matriz de riesgos. Entregamos un alcance medible, no una promesa comercial. Ningún proyecto avanza sin una hoja de ruta firmada por las dos partes.</p>
+        <div class="tags">
+          <span>Visita</span><span>Levantamiento</span><span>Matriz de riesgos</span><span>Alcance medible</span>
+        </div>
+      </article>
+
+      <article class="proc-step" data-step="2" data-title="Diseño &amp;<br/>cálculo" data-dur="Duración típica · 8 — 20 semanas">
+        <div class="top">
+          <span class="ord">0<span class="acc">2</span></span>
+          <h4>Diseño &amp; cálculo</h4>
+          <span class="dur">8 — 20 sem.</span>
+        </div>
+        <p>Anteproyecto, diseño definitivo y memorias de cálculo. Coordinación BIM hasta LOD 400, especificaciones técnicas, presupuesto detallado y cronograma realista. Tres revisiones de pares internas como mínimo.</p>
+        <div class="tags">
+          <span>Memorias</span><span>BIM LOD 400</span><span>Presupuesto</span><span>Especificaciones</span><span>Pares internas</span>
+        </div>
+      </article>
+
+      <article class="proc-step" data-step="3" data-title="Construcción<br/>&amp; obra" data-dur="Duración típica · variable">
+        <div class="top">
+          <span class="ord">0<span class="acc">3</span></span>
+          <h4>Construcción &amp; obra</h4>
+          <span class="dur">Variable</span>
+        </div>
+        <p>Acompañamiento técnico en obra, ajustes de diseño, control de calidad de materiales, ensayos de laboratorio y resolución de no-conformidades. Residente permanente designado en obras mayores a 6 meses.</p>
+        <div class="tags">
+          <span>Residente</span><span>Control de calidad</span><span>Ajustes</span><span>Laboratorio</span><span>No-conformidades</span>
+        </div>
+      </article>
+
+      <article class="proc-step" data-step="4" data-title="Cierre &amp;<br/>garantía" data-dur="Duración típica · 4 — 6 semanas">
+        <div class="top">
+          <span class="ord">0<span class="acc">4</span></span>
+          <h4>Cierre &amp; garantía</h4>
+          <span class="dur">4 — 6 sem.</span>
+        </div>
+        <p>Liquidación contractual, planos as-built, manuales de operación y mantenimiento. Garantía técnica estructural por vida útil de diseño. Programa de inspección anual opcional durante los primeros 5 años.</p>
+        <div class="tags">
+          <span>As-built</span><span>Manuales O&amp;M</span><span>Liquidación</span><span>Garantía estructural</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== INDUSTRIES ====== -->
+<section id="sectores" class="industries">
+  <div class="container">
+    <div class="sec-head" style="padding:0 0 28px;">
+      <div class="mono num">04 — Sectores</div>
+      <h2 class="reveal">Donde <span class="acc">operamos.</span></h2>
+      <div class="mono tag">8 verticales</div>
+    </div>
+
+    <div class="ind-list">
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/01</span>
+        <h4>Infraestructura vial &amp; <span class="acc">transporte</span></h4>
+        <span class="ct">68 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/02</span>
+        <h4>Edificación <span class="acc">institucional</span></h4>
+        <span class="ct">42 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/03</span>
+        <h4>Hospitalario &amp; <span class="acc">salud</span></h4>
+        <span class="ct">19 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/04</span>
+        <h4>Energía &amp; <span class="acc">oil &amp; gas</span></h4>
+        <span class="ct">23 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/05</span>
+        <h4>Acueducto, alcantarillado &amp; <span class="acc">PTAR</span></h4>
+        <span class="ct">31 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/06</span>
+        <h4>Industrial &amp; <span class="acc">logístico</span></h4>
+        <span class="ct">28 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/07</span>
+        <h4>Minería &amp; <span class="acc">obras subterráneas</span></h4>
+        <span class="ct">14 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="ind" href="#" data-cursor="hover">
+        <span class="num">/08</span>
+        <h4>Vivienda colectiva &amp; <span class="acc">VIS</span></h4>
+        <span class="ct">15 proyectos</span>
+        <span class="x"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MANIFESTO ====== -->
+<section class="manifesto container">
+  <div class="sec-head">
+    <div class="mono num">05 — Posición</div>
+    <h2 class="reveal">Manifiesto<br/><span class="acc">técnico.</span></h2>
+    <div class="mono tag">Quiénes somos</div>
+  </div>
+
+  <div class="body">
+    <aside class="side">
+      <span class="mono">B_ENG · 2011 — 2026</span>
+      <div class="badge">
+        <div class="rot">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <path id="badge-circle" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/>
+            </defs>
+            <text font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="3" fill="#111">
+              <textPath href="#badge-circle">RESPONSABILIDAD · TÉCNICA · POR · VIDA · ÚTIL · </textPath>
+            </text>
+          </svg>
+        </div>
+        <div>Ingeniería<br/><span class="acc">con</span><br/>responsabilidad</div>
+      </div>
+      <p>Cada documento técnico que sale de este estudio lleva la firma de un ingeniero responsable que responde por él durante la vida útil de la obra. No firmamos lo que no calculamos.</p>
+    </aside>
+    <p class="quote reveal">
+      Construir en Colombia es un acto técnico <span class="hi">y político</span>. Cada puente, cada vía terciaria, cada tanque elevado <u>sostiene</u> una comunidad — y a veces, varias generaciones. Por eso no firmamos planos que no podamos defender: <b>calculamos lo que se construye</b>, supervisamos lo que se ejecuta, y respondemos por lo que se entrega — durante toda la vida útil de la obra.
+    </p>
+  </div>
+</section>
+
+<!-- ====== MARQUEE REV ====== -->
+<div class="marquee rev" style="background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="marquee-track">
+    <span>Cotizar proyecto <i class="dot"></i> <i class="acc">contacto@beng.co</i> <i class="dot"></i> +57 601 745 22 10 <i class="dot"></i> <i class="acc">Bogotá · Medellín · Barranquilla</i> <i class="dot"></i></span>
+    <span>Cotizar proyecto <i class="dot"></i> <i class="acc">contacto@beng.co</i> <i class="dot"></i> +57 601 745 22 10 <i class="dot"></i> <i class="acc">Bogotá · Medellín · Barranquilla</i> <i class="dot"></i></span>
+  </div>
+</div>
+
+<!-- ====== TEAM ====== -->
+<section id="equipo" class="container team">
+  <div class="sec-head">
+    <div class="mono num">06 — Estudio</div>
+    <h2 class="reveal">Las personas<br/>detrás del <span class="acc">cálculo.</span></h2>
+    <div class="mono tag">62 colaboradores</div>
+  </div>
+
+  <div class="team-wrap">
+    <div class="lead">
+      Somos <span class="acc">sesenta y dos</span> profesionales — ingenieros civiles, estructurales, hidráulicos, geotécnicos, BIM y residentes — entre Bogotá, Medellín y Barranquilla. Trabajamos en equipos pequeños, pero respondemos como firma.
+    </div>
+    <div class="members">
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Mariana Ocampo</span><span class="id">/01</span></div>
+        <span class="rl">Directora · Estructuras</span>
+      </article>
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Andrés Cifuentes</span><span class="id">/02</span></div>
+        <span class="rl">Director · Vías &amp; transporte</span>
+      </article>
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Laura Henao</span><span class="id">/03</span></div>
+        <span class="rl">Líder · Hidráulica &amp; sanitaria</span>
+      </article>
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Sebastián Rojas</span><span class="id">/04</span></div>
+        <span class="rl">Líder · Geotecnia</span>
+      </article>
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Camila Restrepo</span><span class="id">/05</span></div>
+        <span class="rl">Coordinadora BIM</span>
+      </article>
+      <article class="member">
+        <div class="pic"><span class="lbl">retrato · 4×5</span></div>
+        <div class="row"><span class="nm">Juan Pablo Mora</span><span class="id">/06</span></div>
+        <span class="rl">Gerente · Interventoría</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section id="contacto" class="cta">
+  <div class="cta-inner">
+    <h2 class="display reveal">
+      ¿Un proyecto<br/>
+      <span class="acc">en mente?</span><br/>
+      <span class="stk">Hablemos.</span>
+    </h2>
+
+    <div class="cta-bot">
+      <a href="mailto:contacto@beng.co" class="cta-mail" data-cursor="hover">
+        contacto@beng.co
+        <span class="arr"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <div class="cta-info">
+        <div>
+          <div class="k">Sede principal</div>
+          <div class="v">Cra. 11 #93-46<br/>Bogotá D.C., Colombia</div>
+        </div>
+        <div>
+          <div class="k">Teléfono</div>
+          <div class="v">+57 601 745 22 10<br/>Lun–Vie · 8h–18h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div>
+        <a href="#" class="logo" style="color:var(--bg)">
+          <span class="logo-mark" style="border-color:var(--bg)"></span>
+          B_ENG
+        </a>
+        <p style="max-width:34ch; color: color-mix(in oklab, var(--bg) 70%, transparent); margin-top:14px; font-size:14px; line-height:1.5;">
+          Estudio colombiano de ingeniería civil. NIT 901.234.567-2 · RUP vigente · ANI registrado.
+        </p>
+        <h5 style="margin-top:24px;">Boletín técnico</h5>
+        <form class="foot-news" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="tu@correo.com" />
+          <button type="submit" data-cursor="hover">Suscribir →</button>
+        </form>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="#" data-cursor="hover">Estructuras</a></li>
+          <li><a href="#" data-cursor="hover">Hidráulica</a></li>
+          <li><a href="#" data-cursor="hover">Vías</a></li>
+          <li><a href="#" data-cursor="hover">Geotecnia</a></li>
+          <li><a href="#" data-cursor="hover">BIM</a></li>
+          <li><a href="#" data-cursor="hover">Interventoría</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Estudio</h5>
+        <ul>
+          <li><a href="#" data-cursor="hover">Nosotros</a></li>
+          <li><a href="#" data-cursor="hover">Proyectos</a></li>
+          <li><a href="#" data-cursor="hover">Proceso</a></li>
+          <li><a href="#" data-cursor="hover">Equipo</a></li>
+          <li><a href="#" data-cursor="hover">Carreras</a></li>
+          <li><a href="#" data-cursor="hover">Prensa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Oficinas</h5>
+        <ul>
+          <li>Bogotá · Cra. 11 #93-46</li>
+          <li>Medellín · Cl. 10 #36-13</li>
+          <li>Barranquilla · Cl. 84 #51B-110</li>
+          <li>&nbsp;</li>
+          <li><a href="mailto:contacto@beng.co" data-cursor="hover">contacto@beng.co</a></li>
+          <li><a href="#" data-cursor="hover">+57 601 745 22 10</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-mid">
+      <div class="l"><span>© 2011 — 2026 B_ENG S.A.S.</span></div>
+      <div class="r">
+        <span>Bogotá · 4°35′N 74°04′W</span>
+        <span id="clock2">— : —  COT</span>
+        <a href="#top" class="back-top" data-cursor="hover">Volver arriba <span class="a"><svg class="ico" viewBox="0 0 24 24"><path d="M12 20V4M5 11l7-7 7 7"/></svg></span></a>
+      </div>
+    </div>
+
+    <div class="foot-big" aria-hidden="true">
+      B<span class="ac">_</span>E<span class="stk">N</span>G<span class="it">.</span>
+    </div>
+
+    <div class="foot-bot">
+      <span>Todos los derechos reservados · ISO 9001 + 14001 · NSR-10 · BIM L3</span>
+      <span class="mono">Diseño y código del estudio · v.26.05</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== SCRIPTS ====== -->
+<script src="js/app.js"></script>
+</body>
+</html>
